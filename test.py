@@ -13,6 +13,8 @@ if uploaded_file is not None:
     st.write(f'scatter plot of {column1} vs {column2}')
     st.scatter_chart(df, x=column1, y=column2)
 
+df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv')
+st.write(df.head(5))
 
 
 
